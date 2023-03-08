@@ -1,0 +1,38 @@
+ALGORITHM algorithm_name
+VAR
+    ch:chaine de caractere;
+    c:CHAR;
+    i ,v,m, n:entier;
+BEGIN
+   ch:=""
+     REPEAT
+   
+       ecrire("saisir uncaractere ");
+    
+        lire(c)
+        ch:=ch+c;
+     UNTIL (c="."")
+     n:=0;
+     m:=0;
+     v:=0;
+
+
+    pour i de 1 à long(ch) faire
+     n:=n+1
+    fin pour
+    ecrire("la longeur de la phrase est",n)
+    pour i de 1 à long(ch) faire
+      si ch[i]==" " alors
+         m+=1;
+      fin si
+    fin pour
+    ecrire("le nombre de mot dans  la phrase est",m)
+    pour i de 1 à long (ch) faire
+       si ch[i] dans ["a" , "e", "i","o","u","y"] alors
+       v==>1
+       fin si
+    fin pour
+    ecrire("le nombre de mot voyelle dans  la phrase est",v)
+
+
+END
